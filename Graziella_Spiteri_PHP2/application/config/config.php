@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/ci/';
+$config['base_url'] = '/Task3PHP2/Graziella_Spiteri_PHP2/';
 
 /*
 |--------------------------------------------------------------------------
@@ -324,7 +324,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = 'tw!tT3r';
+$config['encryption_key'] = 'Graziella';
 
 /*
 |--------------------------------------------------------------------------
