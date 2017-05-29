@@ -1,0 +1,636 @@
+*:not(head)
+    display: block
+    margin: 0
+
+h3
+    color: #345
+    font-family: Verdana
+
+nav, header
+
+    ul
+        list-style-type: none
+        //margin: 10px
+        padding: 10px 40px
+        overflow: hidden
+        background-color: #345
+        top: 0
+        display: block
+
+        li
+            .active
+                float: left
+                font-family: Verdana, Charcoal, sans-serif
+                font-size: 29px
+                padding: 0
+
+            a
+                display: block
+                color: white
+                text-align: center
+                //padding: 14px 16px
+                text-decoration: none
+
+
+.navigation
+    display: flex
+    float: right
+    padding-top: 4px
+    vertical-align: middle
+    justify-content: center
+    //padding: 0 20px
+    //padding: 4px
+
+    li
+        margin: 0 15px 0 0
+
+        img
+            height: 28px
+
+            &:hover
+                //height: 30px
+                -webkit-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+                -moz-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+                box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+                background: darken(#345, 2%)
+                margin: 1px 0
+
+
+
+#login
+    display: block
+    padding-top: 6px
+    float: right
+    //width: 250px
+    position: relative
+
+    input, button
+        //position: absolute
+        display: block
+        float: left
+        //padding-top: 6px
+        //wdith: 100
+        //input
+        margin: 0 10px 0 0
+
+////////////////////////
+
+    body
+        background-image: url(../images/global-education2.png)
+
+body
+    background-color: white
+    background-attachment: fixed
+    background-image: url(../images/global-education2.png)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+        //height: 100%
+
+#fname, #lname
+    width: 45%
+
+#signin
+    position: relative
+    background: #345
+    float: left
+    display-content: flex-start
+    margin: 5% 0 0 0
+    padding: 20px 20px 20px 20px
+    -webkit-border-radius: 15px
+    color: white
+    font-family: Verdana, Charcoal, sans-serif
+    -webkit-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    -moz-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    //font-size: 29px
+    width: 320px
+
+    #lname
+        float: right
+        margin-top: -29px
+
+h1, h4
+    padding: 0
+    margin: 0
+
+.signcenter
+    text-align: center
+    display: flex
+    justify-content: center
+
+input, select
+    -webkit-border-radius: 5px
+    border: 1px solid #04538a
+    height: 20px
+    margin: 5px 0
+
+textarea
+    -webkit-border-radius: 5px
+    border: 1px solid #04538a
+    height: 150px
+    margin: 5px 0
+
+label
+    line-height: -100.5px
+
+#signin input:not(.date)
+    margin-top: 5px
+
+.date
+    margin-left: 25%
+    text-align: center
+    font-family: Verdana, Charcoal, sans-serif
+
+#email, #password, #repassword
+    width: 100%
+
+    &[type="radio"]
+        margin-top: 10px
+
+.check
+    position: absolute
+    padding: 0
+    margin: 0
+
+.signup
+    position: absolute
+    bottom: 25px
+    left: 149px
+    //pad: 25px
+
+////////////
+
+
+/////////////////////////////////////////////////
+///////Home//////
+
+main
+    display: flex
+    justify-content: center
+
+
+.discussBox
+    border: #345 solid 1px
+    height: 235px
+    //padding-top: 25%
+    display: flex
+    width: 650px
+    margin: 45px 0%
+    position: relative
+    background: #fff
+    flex-direction: column
+    //flex: 1
+
+    .discussTitle
+        position: absolute
+        line-height: 40px
+        padding-left: 6px
+        position: absolute
+        top: 0
+        left: 120px
+        width: 600px
+        vertical-align: middle
+        flex-direction: column
+
+        h3
+            position: absolute
+            font-size: 18px
+            font-weight: bold
+
+
+    .discussBrief
+        height: 60px
+        //width: 600px
+        position: absolute
+        top: 40px
+        left: 120px
+        overflow: hidden
+        flex-direction: column
+
+        p
+            padding-left: 6px
+
+    .discussMeta
+        font-family: Verdana
+        height: 20px
+        width: 600px
+        //position: absolute
+        top: 80px
+        left: 120px
+        font-size: 12px
+        line-height: 20px
+        vertical-align: middle
+        position: absolute
+        flex-direction: column
+        //margin-top: 10%
+
+        .PostedOn
+            //position: absolute
+            padding-left: 156px
+            margin-right: 24px
+
+            p
+                margin-bottom: 0
+
+        .PostedOn, .discussBy
+            position: absolute
+            display: inline
+            float: left
+
+    .discussLink
+        position: absolute
+        background: #345
+        width: 120px
+        right: 100px
+        text-align: center
+        //justify-content: flex-end
+
+        a
+            color: #fff
+            text-decoration: none
+            display: block
+
+///////////////////////////////////////////////////
+/////Contact/////////////
+#contact
+    position: relative
+    float: left
+    //left: 12%
+    margin-top: 50px
+    //margin: 5%
+    padding: 30px 30px 30px 30px
+    //-webkit-border-radius: 15px
+    color: white
+    font-family: Verdana, Charcoal, sans-serif
+    -webkit-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    -moz-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    //font-size: 29px
+    width: 60%
+    background-color: #345
+
+    input, textarea
+        font-family: Verdana, Charcoal, sans-serif
+        resize: none
+        width: 100%
+
+
+///////////
+
+.calendar
+    margin-top: 50px
+    //border: 1px solid #000
+    width: 540px
+    -webkit-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    -moz-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+
+    .invisible
+        display: none
+
+    header
+        display: flex
+        padding: 30px 25px
+        //width: 100%
+        background: #345
+        text-align: center
+
+
+        a
+            line-height: 5em
+            margin: 0 2em
+            flex: 1
+
+            &.next
+                text-align: right
+                color: white
+                decoration: none
+                font-family: Verdana
+
+            &.previous
+                text-align: left
+                color: white
+                decoration: none
+                font-family: Verdana
+
+
+        h1
+            text-align: center
+            color: white
+            font-size: 20px
+            text-transform: uppercase
+            letter-spacing: 3px
+            font-family: Verdana
+            margin-top: 25px
+
+    .calendar-weekdays
+        background-color: #ddd
+
+        li
+            //display: inline-block
+            //width: 13.1%
+            color: #666
+            text-align: center
+
+    ul
+        list-style: none
+        padding: 0
+        margin: 0
+        overflow: hidden
+        font-family: Verdana
+
+        li
+            float: left
+            width: percentage(1 / 7)
+
+        &.calendar-days
+
+            li
+                height: 5em
+                overflow: hidden
+                background: white
+                font-size: 12px
+                color: #777
+                text-align: center
+
+                &:nth-child(2n)
+                    background-color: #eee
+
+                &.disabled
+                    background-color: #ccc
+
+                span
+                    float: right
+                    margin: 1em
+
+
+.events
+    margin: 18% 15%
+    width: 540px
+    -webkit-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    -moz-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    float: left
+    background: #345
+
+.cal
+    margin: 8% 5%
+    width: 540px
+    -webkit-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    -moz-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    //padding: 20px
+
+    ul
+        list-style-type: none
+        font-family: Verdana
+
+
+    .month
+        padding: 70px 25px
+        //width: 100%
+        background: #345
+        text-align: center
+
+        ul
+            margin: 0
+            padding: 0
+
+        li
+            color: white
+            font-size: 20px
+            text-transform: uppercase
+            letter-spacing: 3px
+
+        .prev
+            float: left
+            padding-top: 10px
+
+
+        .next
+            float: right
+            padding-top: 10px
+
+
+    .weekdays
+        margin: 0
+        padding: 10px 0
+        background-color: #ddd
+
+        li
+            display: inline-block
+            width: 13.1%
+            color: #666
+            text-align: center
+
+    .days
+        padding: 10px 0
+        background: #eee
+        margin: 0
+
+        li
+            list-style-type: none
+            display: inline-block
+            width: 13.1%
+            text-align: center
+            margin-bottom: 5px
+            font-size: 12px
+            color: #777
+
+            .act
+                padding: 5px
+                background: #345
+                color: white
+
+
+
+.container
+    background: #fff
+    //display: block
+    //height: 100%
+    //margin-top: 20px
+    padding: 2%
+    position: inherit
+    width: 93%
+    margin: 20px 1.5% 24px 1.5%
+
+
+
+    .title
+        color: #345
+        font-family: Verdana
+        font-size: 16px
+
+    .post
+        font-family: Verdana
+        font-size: 14px
+        padding-top: 2%
+
+    .comment
+        //background-color: #8e929e
+        width: 80%
+        font-family: Verdana
+        //color: white
+        padding: 0 7px
+        float: left
+        margin-right: 5px
+        margin-top: -2px
+
+    .postsend
+        margin-top: 10px
+
+        //float: right
+
+    .name
+        margin-top: 10px
+        margin-left: 5px
+        font-family: Verdana
+        font-size: 14px
+        font-weight: bold
+        color: #345
+
+    .comment
+        //margin-top: 10px
+        font-family: Verdana
+        font-size: 14px
+
+    .like
+        margin-top: -19px
+        font-family: Verdana
+        font-size: 14px
+        //background: blue
+        position: absolute
+
+    .lcomment
+        font-family: Verdana
+        font-size: 14px
+        position: absolute
+        margin-left: 50px
+        margin-top: -19px
+
+.sub-container
+    //top: 400px
+    background: #ddd
+    display: block
+    height: 100%
+    margin-top: 20px
+    padding: 2%
+    position: relative
+    width: 50%
+
+.box
+    position: relative
+    display: block
+    background: #345
+    margin-top: 50px
+    vertical-align: middle
+    justify-content: center
+    -webkit-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    -moz-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+
+
+////////////////////////Profile////////////////////////
+
+.boxp
+    position: relative
+    display: block
+    flex-flow: column wrap
+    //border: 2px solid black
+    margin-top: 50px
+    //margin: 24px 15px
+    background: #345
+    -webkit-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    -moz-box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+    box-shadow: 2px 4px 80px -14px rgba(0,0,0,1)
+
+
+    #details
+        //position: absolute
+        background: #fff
+        float: left
+        width: 255px
+        height: 490px
+        margin: 20px
+        padding: 20px
+        position: relative
+        text-align: center
+
+        #info
+            font-size: 16px
+            padding: 20px 0
+            font-family: Verdana
+
+        img
+            margin-top: 10px
+            width: 250px
+            vertical-align: middle
+            justify-content: center
+
+
+        ul
+            //position: absolute
+            left: -15px
+            font-family: Verdana
+            list-style-type: none
+            margin: 0
+            padding: 0
+            overflow: hidden
+
+            li
+                float: left
+
+                p
+                    display: block
+                    color: #345
+                    padding: 5px 42px
+                    text-decoration: none
+
+
+    .posts
+        //position: relative
+        display: block
+        float: right
+        //margin: 20px
+
+        .posting
+            //background: #fff
+            width: 655px
+            //height: 355px
+            margin: 20px
+            position: relative
+
+            #textspace
+                padding: 1%
+                top: 5px
+                font-family: Verdana
+                //padding-top: 35px
+                position: absolute
+                width: 98%
+                margin: 0
+                //margin: 20px 1.5% 24px 1.5%
+
+            button
+                float: right
+                margin-top: 175px
+
+        .posted
+            background: #345
+            width: 675px
+            //height: 355px
+            margin-top: 260px
+
+            .container
+                right: 20px
+                margin: 18px
+
+//.containers
+    background: #fff
+    //display: block
+    //height: 100%
+    //margin-top: 20px
+    padding: 2%
+    position: inherit
+    width: 93%

@@ -13,7 +13,7 @@ class Users_Model extends CI_Model {
             'username'    => $username,
             'password'     => password_hash ($password, CRYPT_BLOWFISH),
             'DOB'    => $DOB,
-            'CourseID'    => $CourseID,
+            'tblCourse_CourseID'    => $CourseID,
         );
 
         $this->db->insert ('tblUsers', $data);

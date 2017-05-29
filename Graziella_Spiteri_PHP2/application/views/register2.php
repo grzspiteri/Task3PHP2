@@ -13,8 +13,7 @@
         <?=form_input ($form['username']); ?>
         <?=form_input ($form['password']); ?>
         <?=form_input ($form['DOB']); ?>
-        <?=form_dropdown ('input-courseID', $form['Courses']); ?>
-
+        <?=form_input ($form['CourseID']); ?>
 
         <?=form_submit (null, 'Register');?>
 

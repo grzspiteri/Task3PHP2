@@ -6,8 +6,7 @@ class Users extends TW_Controller {
 	# The registration form
 	public function register () {
 
-		# first: load the form helper
-		$this->load->helper ('form');
+		$this->load->model ('course_model');
 
 		# the page info goes into an array
 		$data = array (
@@ -49,26 +48,13 @@ class Users extends TW_Controller {
 				),
 
 				'DOB'			=> array (
-					'type'			=> 'int',
+					'type'			=> 'date',
 					'name'			=> 'input-DOB',
 					'placeholder'	=> '01/01/2017',
 					'required'		=> TRUE
 				),
 
-				'password'		=> array (
-					'type'			=> 'password',
-					'name'			=> 'input-password',
-					'placeholder'	=> 'password',
-					'required'		=> TRUE
-				),
-
-				'CourseID'		=> array (
-					'type'			=> 'int',
-					'name'			=> 'input-courseID',
-					'placeholder'	=> 'CourseID',
-					'required'		=> TRUE
-				),
-
+				'Courses'		=> $this->course_model->get_all ()
 			)
 		);
 
@@ -117,13 +103,7 @@ class Users extends TW_Controller {
 			array (
 				'field'	=> 'input-DOB',
 				'label' => 'DOB',
-				'rules' => 'required|alpha'
-			),
-
-			array (
-				'field'	=> 'input-courseID',
-				'label' => 'CourseID',
-				'rules' => 'required|alpha'
+				'rules' => 'required'
 			)
 
 		);
@@ -142,7 +122,7 @@ class Users extends TW_Controller {
 		$email 		= $this->input->post ('input-email');
 		$username 		= $this->input->post ('input-username');
 		$password 	= $this->input->post ('input-password');
-  	$DOB 	= $this->input->post ('input-DOB');
+  	    $DOB 	= strtotime ($this->input->post ('input-DOB'));
 		$CourseID 		= $this->input->post ('input-courseID');
 
 		if ($this->users_model->register ($name, $surname, $email, $username, $password, $DOB, $CourseID)) {
