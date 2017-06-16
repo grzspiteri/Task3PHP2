@@ -17,12 +17,8 @@ class Profile extends TW_Controller {
 			'username'	=> $username
 		);
 
-		$this->load->view ('struct/start');
-
 		# This command loads a view from the application/views folder
-		$this->load->view('profile/view', $data);
-
-		$this->load->view ('struct/end');
+		$this->build('profile/view', $data);
 	}
 
 

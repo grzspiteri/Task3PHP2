@@ -1,24 +1,3 @@
-<?php
-
-    include 'functions.php';
-
-    if ($_SERVER['REQUEST_METHOD'] !== "POST") {
-        echo "No form was sent.";
-        die;
-    }
-
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    $login = login ($username, $password);
-
-    if ($login !== FALSE) {
-        $_SESSION['user_id'] = $login['user_id'];
-        $_SESSION['username'] = $login['user_username'];
-        redirect ("index.php");
-    }
-
-?>
 <!DOCTYPE html>
 <html>
     <head>

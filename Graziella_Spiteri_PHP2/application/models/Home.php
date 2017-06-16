@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends TW_Controller {
+class Home extends SL_Controller {
 
 	function _construct ()
 	{
