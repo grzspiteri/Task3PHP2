@@ -9,7 +9,7 @@
     <body>
         <main id="back">
             <ul id="signin">
-                <?=form_open  (''); ?>
+                <?=form_open  ('home'); ?>
 
                     <?=form_input ($form['username']); ?>
                     <?=form_input ($form['password']); ?>
