@@ -25,12 +25,12 @@ class Users_Model extends CI_Model {
     }
 
 
-    # Check if the user email exists
-    public function email_id ($email) {
+    # Check if the user username exists
+    public function username_id ($username) {
 
-        # The query will get the id from the email address
+        # The query will get the id from the username address
         $this->db->select ('idUser')
-            ->where ('email', $email);
+            ->where ('username', $username);
 
         # Put the results in a variable
         $result = $this->db->get ('tblUsers');

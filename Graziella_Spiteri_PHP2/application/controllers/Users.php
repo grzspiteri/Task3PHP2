@@ -142,12 +142,12 @@ class Users extends SL_Controller {
 		# the page info goes into an array
 		$data = array (
 			'form'		=> array (
-				'email'			=> array (
-					'type'			=> 'email',
-					'name'			=> 'input-email',
-					'placeholder'	=> 'me@example.com',
-					'required'		=> TRUE
-				),
+                'username'		=> array (
+                    'type'			=> 'text',
+                    'name'			=> 'input-username',
+                    'placeholder'	=> 'username',
+                    'required'		=> TRUE
+                ),
 				'password'		=> array (
 					'type'			=> 'password',
 					'name'			=> 'input-password',
@@ -170,10 +170,10 @@ class Users extends SL_Controller {
 
 		# set the form rules
 		$rules = array (
-			array (
-				'field'	=> 'input-email',
-				'label' => 'Email',
-				'rules' => 'required|valid_email'
+            array (
+				'field'	=> 'input-username',
+				'label' => 'Username',
+				'rules' => 'required|alpha'
 			),
 			array (
 				'field'	=> 'input-password',
@@ -191,15 +191,15 @@ class Users extends SL_Controller {
 			return;
 		}
 
-		$email 		= $this->input->post ('input-email');
+		$username 		= $this->input->post ('input-username');
 		$password 	= $this->input->post ('input-password');
 
 		# Set the result of this query in a variable
-		$login_id = $this->users_model->email_id ($email);
+		$login_id = $this->users_model->username_id ($username);
 
 		# If the email doesn't exist, stop here
 		if (!$login_id) {
-			echo "The email does not exist.";
+			echo "The username does not exist.";
 			return;
 		}
 
