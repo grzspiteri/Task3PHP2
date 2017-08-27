@@ -35,7 +35,7 @@ $config['base_url'] = '/Task3PHP2/Graziella_Spiteri_PHP2/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php?';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

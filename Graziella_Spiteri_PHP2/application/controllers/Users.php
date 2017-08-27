@@ -127,6 +127,7 @@ class Users extends SL_Controller {
 
 		if ($this->users_model->register ($name, $surname, $email, $username, $password, $DOB, $CourseID)) {
 			echo "The user was registered.";
+            redirect("users/login");
 		} else {
 			echo "The user could not be registered.";
 		}
