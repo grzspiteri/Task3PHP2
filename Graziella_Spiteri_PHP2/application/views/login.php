@@ -9,13 +9,14 @@
     <body>
         <main id="back">
             <ul id="signin">
-                <?=form_open  ('home'); ?>
+                <?=form_open ('users/do_login'); ?>
 
-                    <?=form_input ($form['username']); ?>
-                    <?=form_input ($form['password']); ?>
-                    <?=form_submit (null, 'Login');?>
-                <?=form_close (); ?>
+        <?=form_input ($form['username']); ?>
+        <?=form_input ($form['password']); ?>
 
+        <?=form_submit (null, 'Login');?>
+
+        <?=form_close (); ?>
             </ul>
         </main>
     </body>

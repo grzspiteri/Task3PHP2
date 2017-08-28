@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Profile extends TW_Controller {
+class Profile extends SL_Controller {
 
 	# This is the index page: http://localhost/ci/index.php?profile
 	public function user($username = NULL)
@@ -18,7 +18,7 @@ class Profile extends TW_Controller {
 		);
 
 		# This command loads a view from the application/views folder
-		$this->build('profile/view', $data);
+		$this->build('profile/home', $data);
 	}
 
 
@@ -26,7 +26,7 @@ class Profile extends TW_Controller {
 	public function message () {
 
 		$this->load->view ('struct/start');
-		$this->load->view ('profile/message');
+		$this->load->view ('profile/home');
 		$this->load->view ('struct/end');
 
 	}

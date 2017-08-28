@@ -215,6 +215,7 @@ class Users extends SL_Controller {
 
 		# We set the userdata, however we need to set an encryption key
 		$this->session->set_userdata ($userdata);
+        redirect('profile/home');
 
 	}
 

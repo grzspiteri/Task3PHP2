@@ -48,8 +48,8 @@ class Users_Model extends CI_Model {
     public function check_password ($id, $password) {
 
         # The query is set
-        $this->db->select ('user_password')
-            ->where ('user_id', $id);
+        $this->db->select ('password')
+            ->where ('idUser', $id);
 
         # Put the results in a variable
         $result = $this->db->get ('tblUsers');
@@ -59,7 +59,7 @@ class Users_Model extends CI_Model {
             return FALSE;
 
         # Get the password since the criteria matches
-        $db_pass = $result->row_array ()['user_password'];
+        $db_pass = $result->row_array ()['password'];
 
         # Tell the user if the password is ok
         return password_verify ($password, $db_pass);
@@ -74,7 +74,7 @@ class Users_Model extends CI_Model {
             ->where ('idUser', $id);
 
         # Put the results in a variable
-        $result = $this->db->get ('tbl_users');
+        $result = $this->db->get ('tblUsers');
 
         # If there is not just ONE row, the login can't happen
         if ($result->num_rows () != 1)
