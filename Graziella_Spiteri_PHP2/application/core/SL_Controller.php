@@ -28,7 +28,7 @@ class SL_Controller extends CI_Controller {
     protected function check_login () {
 
         #if the user is logged in
-        if ($this->session->userdata ('user_id') !=NULL) {
+        if ($this->session->userdata ('idUser') !=NULL) {
 
             #if the user is on the login/register pages
             if ($this->router->fetch_class() == 'users') {
