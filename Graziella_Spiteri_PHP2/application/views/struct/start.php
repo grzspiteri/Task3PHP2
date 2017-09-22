@@ -14,19 +14,19 @@
 
                <div class="navigation">
                    <li>
-                        <a href="profile.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Symbol_OK.svg/1024px-Symbol_OK.svg.png"></a>
+                        <a href="profile.php"><img src="images/profile.png"></a>
                    </li>
                     <li>
-                        <a href="home.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Symbol_OK.svg/1024px-Symbol_OK.svg.png"></a>
+                        <a href="home.php"><img src="images/home.png"></a>
                    </li>
                     <li>
-                        <a href="calendar.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Symbol_OK.svg/1024px-Symbol_OK.svg.png"></a>
+                        <a href="calendar.php"><img src="images/cal.png"></a>
                    </li>
                     <li>
-                        <a href="contactUs.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Symbol_OK.svg/1024px-Symbol_OK.svg.png"></a>
+                        <a href="contactUs.php"><img src="images/msg.png"></a>
                    </li>
                     <li>
-                        <a href="index.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Symbol_OK.svg/1024px-Symbol_OK.svg.png"></a>
+                        <a href="index.php"><img src="images/out.png"></a>
                    </li>
 
                 </div>
